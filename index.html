@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>git & github </title>
+</head>
+<body>
+创建文件：
+touch index.html
+
+添加所有文件：
+git add .
+
+添加所有html文件：
+git add *.html
+
+删除文件：
+git rm --cached index.html
+
+查看状态：
+git status
+
+备注并提交：
+git commit -m 'git commit -m 需要备注得信息'
+
+忽略不想提交得文件：
+创建 .gitignore   然后把不想忽略得文件名写到 .gitignore 文件中
+
+创建分支：
+git branch cqwName
+进入分支：
+git checkout cqwName
+返回主支：
+git checkout master
+
+合并分支（先回到主支）：
+git merge cqwName
+
+连接到github：
+git remote add origin https://github.com/cqw5354033/-.git
+
+测试是否连接成功： (显示 origin 连接成功)
+git remote
+
+上传到github：
+git push -u origin master (第一次 复制github 路径)
+git push
+
+对当前项目进行描述：
+README.md
+
+
+<h1>分支操作不回影响主支(必须 git commit 后才会有效果)</h1>
+
+
+</body>
+</html>
